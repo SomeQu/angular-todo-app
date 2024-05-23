@@ -1,0 +1,37 @@
+.todo {
+  display: flex;
+
+  .todo-delete {
+    border-bottom: 1px solid black;
+    padding: 5px 50px;
+    border-right: 1px solid black;
+  }
+  .todo-name {
+    border-bottom: 1px solid black;
+    padding: 5px 100px;
+    width: 500px;
+  }
+  .todo-activity {
+    position: relative;
+    border-bottom: 1px solid black;
+    padding: 5px 50px;
+    border-left: 1px solid black;
+    cursor: pointer;
+    .activity_list {
+      .cont {
+        display: flex;
+        flex-direction: column;
+        span {
+          border: 1px solid black;
+        }
+      }
+      position: absolute;
+      top: 25px;
+      right: 40px;
+      cursor: pointer;
+      background-color: white;
+      padding: 5px;
+      z-index: 2;
+    }
+  }
+}

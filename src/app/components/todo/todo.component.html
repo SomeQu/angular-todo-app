@@ -1,0 +1,27 @@
+<div class="todo">
+  <div class="todo-delete" (click)="deleteTodo()">
+    <button class="button">Delete task</button>
+  </div>
+
+  <div class="todo-name">
+    <span class="name">{{ todo.name | titlecase }}</span>
+  </div>
+  <div class="todo-activity">
+    <span (click)="showTodo()" class="activity">
+      {{ todo.activity | titlecase }}</span
+    >
+    @if (showed) {
+
+    <div class="activity_list">
+      <div class="cont">
+        <span
+          (click)="sendTodoAct(item)"
+          *ngFor="let item of activities; let i = index"
+        >
+          {{ item | titlecase }}</span
+        >
+      </div>
+    </div>
+    }
+  </div>
+</div>

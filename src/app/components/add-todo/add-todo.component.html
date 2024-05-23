@@ -1,0 +1,5 @@
+<div class="add-todo">
+  <h2>Add Todo</h2>
+  <input [(ngModel)]="todoName" (ngModelChange)="console()" type="text" />
+  <button (click)="addTodo()">add</button>
+</div>
